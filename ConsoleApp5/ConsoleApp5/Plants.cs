@@ -4,16 +4,21 @@ using System.Text;
 
 namespace ConsoleApp5
 {
-   abstract class Plants
+    abstract class Plants
     {
-        string type;
-        int view;
+        public string type;
+        public int size;
 
-        public abstract void care();
+        public abstract void Care();
 
         public void gettype()
         {
             Console.WriteLine(type);
+        }
+
+        internal static object a(Plants arg)
+        {
+            throw new NotImplementedException();
         }
     }
 }
