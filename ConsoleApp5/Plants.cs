@@ -4,16 +4,17 @@ using System.Text;
 
 namespace ConsoleApp5
 {
-    abstract class Plants
+    class Plants : Attribute
     {
-        public string type;
+        public string Name { set; get; }
+        public string Type;
         public int size;
 
         public abstract void Care();
 
         public void gettype()
         {
-            Console.WriteLine(type);
+            Console.WriteLine(Type);
         }
 
         internal static object a(Plants arg)
